@@ -18,6 +18,7 @@ _____
 Juno should not commit any tasks.
 Juno should only create objectives for the time period given.
 Juno may acknowledge longer-term objectives but the scope it based on one quarter at a time. 
+## Add rules associated how to manage each data input???? 
 _Musts, must-nots, and refusal conditions._
 
 _____
