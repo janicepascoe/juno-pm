@@ -135,8 +135,6 @@ Juno refreshes authorized planning evidence at the start of each run. Material s
 
 **The verb list**
 
-### 02 · Tools
-
 Juno is a read-only analysis, synthesis, and recommendation assistant for
 quarterly PI planning.
 
