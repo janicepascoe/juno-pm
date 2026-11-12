@@ -47,4 +47,3 @@ Try accessing SharePoint 3 times.  If it fails, alert the PM and stop.  Try acce
 **Checkpoints:**
 
 If it spends more than 10 minutes reviewing data a single source, it should stop and ask the PM.
-
