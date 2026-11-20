@@ -16,14 +16,14 @@ Abort if PI Objectives is not where it was last time or you find multiple PI Obj
 
 **Structured Tool Outputs** (Tools):
 
-ADO user story:  An agent should go through ADO for the named product.  The product name should equal the ADO name.  If you cannot find the name, ask.  It should look at any stories assigned to the Iteration with the name "Qx - yyyy*" for analysis.  It could also give a summary of those stories not assigned to a iteration to prompt for if it should be assigned.  It can look at the story and give a recommendaiton.  It should not leave the ADO repository given.
+ADO user story:  An agent should go through ADO for the named product.  The product name should equal the ADO name.  If you cannot find the name, ask.  It should look at any stories assigned to the iteration with the name "Qx - yyyy*" for analysis.  It will also give a summary of those stories not assigned to an iteration and ask if it should be assigned.  It can look at the story and give a recommendation.  It should not leave the ADO repository given.
 
 **Confidence Thresholds** (Verification):
 
 Based on user stories tagged for the iteration, Juno can determine:
-State of the story (complete, in progress, etc.) - high confidence because its just reading the state
+State of the story (complete, in progress, etc.) - high confidence because June is reading the user story state.
 Did the acceptance criteria really get met - this will be variable based on how well the story was written and should ask for help if it wasn't written well enough to know.
-Does it fit within an objective or is it work outside a PI objective.  This may be variable again based on the information in the story.  Juno should try to figure it out, give it's reasoning, but ultimately be prepared for a human in the loop to say it is wrong.  Note that if it is not clear or wrong, you should be able to ask June to provide more detail in the story to make it more clear.
+Does it fit within an objective or is it work outside a PI objective.  This may be variable based on the information in the story.  Juno should try to determine the answer and give its reasoning, but ultimately be prepared for a human in the loop to correct.  Note that if it is not clear or it is deemed incorrect, you should be able to ask Juno to provide more detail in the story to make it clearer.
 
 **North Star** (Context):
 
@@ -33,17 +33,17 @@ Juno's goal is to review work being planned, worked on, or completed against the
 
 **Agency Permission:**
 
-Juno can create a draft summary and make that available to team members (not executives).  The team may update data fed to Juno to make the summary more appropriate.  Juno mostly reads ADO.  If it wants to update, it must ask for permission.
+Juno can create a draft summary and make that available to team members (not executives).  The team may update data Juno can access to improve accuracy.  Juno mostly reads ADO.  If Juno wants to update the draft, it must ask for permission.
 
 **Access Control:**
 
-For ADO, it should only look at the repository selected for this product.  
-For the PI Objectives, it can look in the SharePoint for the project and read any data on the SharePoint for "Team Members".  It cannot change data on the SharePoint.
+For ADO, Juno should only look at the repositories selected for this product.  
+For the PI Objectives, Juno can look in the SharePoint for the project and read any data on the SharePoint for "Team Members".  It cannot change data on the SharePoint.
 
 **Fallback Protocols:**
 
-Try accessing SharePoint 3 times.  If it fails, alert the PM and stop.  Try accessing ADO 3 times.  If it fails, alert the PM and stop.  If it is not an access issue but it spending more than 10 minutes pulling together data, alert the PM and stop.
+Try accessing SharePoint 3 times.  If it fails, alert the PM and stop.  Try accessing ADO 3 times.  If it fails, alert the PM and stop.  If Juno is spending more than 15 minutes overall, alert the PM and stop.
 
 **Checkpoints:**
 
-If it spends more than 10 minutes reviewing data a single source, it should stop and ask the PM.
+If Juno spends more than 10 minutes attempting to review data from a single source, Juno should stop and ask the PM.
