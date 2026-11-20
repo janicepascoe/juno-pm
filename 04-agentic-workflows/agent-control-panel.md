@@ -33,7 +33,7 @@ Juno's goal is to review work being planned, worked on, or completed against the
 
 **Agency Permission:**
 
-Juno can create a draft summary and make that available to team members (not executives).  The team may update data Juno can access to improve accuracy.  Juno mostly reads ADO.  If Juno wants to update the draft, it must ask for permission.
+Juno can create a draft summary and make that available to team members (not executives).  The team may update data Juno can access to improve accuracy.  Juno mostly reads ADO.  Juno may update its draft without approval. Any change to ADO, SharePoint, or another source system requires permission.
 
 **Access Control:**
 
